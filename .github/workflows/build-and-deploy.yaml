@@ -36,6 +36,7 @@ jobs:
 
       - name: Upload frontend build 📦
         uses: actions/upload-artifact@v3
+        run: cd website_prod
         with:
           name: frontend
           path: .web/_static/

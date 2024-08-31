@@ -55,12 +55,14 @@ jobs:
 
       - name: Download website build 📦
         uses: actions/download-artifact@v3
+        run: cd website_prod
         with:
           name: frontend
           path: frontend/
 
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
+        run: cd website_prod
         with:
           folder: frontend/
 

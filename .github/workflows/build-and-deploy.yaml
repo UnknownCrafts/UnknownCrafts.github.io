@@ -31,6 +31,7 @@ jobs:
 
       - name: Build the website 🚧
         run: |
+          cd website_prod
           reflex export --no-zip --frontend-only
 
       - name: Upload frontend build 📦

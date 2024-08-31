@@ -24,7 +24,10 @@ jobs:
           pip install .
 
       - name: Initialize Reflex 📦
-        run: reflex init
+        run: |
+          mkdir website
+          cd website
+          reflex init
 
       - name: Build the website 🚧
         run: |

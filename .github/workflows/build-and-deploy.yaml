@@ -25,8 +25,8 @@ jobs:
 
       - name: Initialize Reflex 📦
         run: |
-          mkdir website
-          cd website
+          mkdir website_prod
+          cd website_prod
           reflex init
 
       - name: Build the website 🚧

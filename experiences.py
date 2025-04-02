@@ -1,7 +1,7 @@
 EXPERIENCES = [
         {
             "date": "Feb 2025-Present",
-            "title": "Embedded Software Developer", 
+            "title": "Embedded Software Developer (Stratopore)", 
             "description": """
 * Developed and optimized embedded drivers for a suite of critical sensors, including barometers, Inertial Measurement Units (IMUs), and Real-Time Clocks (RTCs), utilizing the STM32 microcontroller platform.
 * Overcame challenges related to I2C communication timing and data integrity, resulting in reliable sensor data capture.
@@ -13,7 +13,7 @@ EXPERIENCES = [
         },
         {
             "date": "Sep 2023-Present",
-            "title": "Guidance and Navigation Software Developer", 
+            "title": "Guidance and Navigation Software Developer (uoRover)", 
             "description": """
 * Optimized autonomous navigation software for the rover using ROS 2, focusing on robust and reliable operation in challenging environments.
 * Implemented a sophisticated input multiplexer (mux) within ROS 2, prioritizing joystick (Logitech F710) then keyboard, and then ROS2 autonomous navigation commands to ensure seamless operator control and autonomous functionality.

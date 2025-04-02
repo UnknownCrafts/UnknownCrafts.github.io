@@ -80,22 +80,23 @@ Side Note: The naive highschooler would have been proud to know that the live de
         {
             "date": "2024",
             "title": "Rentify", 
+            "description": """* The goal of the app is to connect people who want to rent out their belongings with people who are looking to rent. The app supports item listing, searching, and renting, creating an easy-to-use service for both parties.
+* The app uses SQL as the backend to facilitate the interactions between the renters and lessor accounts.
+* I had a flexible role during this project where I mainly worked on the front end of the app where I made sure to make a UI/UX experience that would be easy to understand and follow. I also worked on backend fixes as needed for the app, for example debugging/fixing SQL queries as needed.
+* Also did QA (Quality assurance) testing of the app to ensure high quality of the code."""
+        },
+        {
+            "date": "2024",
+            "title": "MindScribeAI (Hack the Hill II)", 
             "description": """* Developed an AI-powered journaling app using Flask (backend) and React (frontend).
 * Implemented a feature to generate monthly reports from user journals, utilizing Gemini 1.5 Flash for rapid text generation.
 * Integrated Gemini as a chatbot, prompt-engineered to simulate a therapist.
 * Primarily focused on backend development:
     * Created APIs for frontend access to the SQLite database (journal storage and retrieval).
-    * Implemented user authentication."""
-        },
-        {
-            "date": "2024",
-            "title": "MindScribeAI (Hack the Hill II)", 
-            "description": """• Developed an AI-powered journaling app using Flask for the backend and React for the frontend.
-                                • The application has a feature that allows the user to generate monthly reports based on their previously written journals, this
-                                    functionality was achieved by using Gemini 1.5 Flash as it is quick to respond to / generate text.
-                                • Gemini was also used as a chatbot in the app but was prompt engineered so that it would talk like a therapist.
-                                • I primarily worked on the backend, creating APIs for the frontend to access the SQLite database for storing and retrieving
-                                    journals as well as authenticating users."""
+    * Implemented user authentication.
+
+Project available here: [https://devpost.com/software/mindscribeai](https://devpost.com/software/mindscribeai)
+"""
         },
         {
             "date": "2024",
@@ -182,6 +183,9 @@ This was my first large-scale hardware project using Arduino, a team-based effor
 
 **Chaotigator:**
 
-* Developed an infinitely generating platformer game where the main character is an alligator that survives disasters."""
+* Developed an infinitely generating platformer game where the main character is an alligator that survives disasters.
+
+Both projects available here: [https://carleton.ca/vv/clubprojects/](https://carleton.ca/vv/clubprojects/)
+"""
         },
     ]

@@ -100,6 +100,31 @@ Project available here: [https://devpost.com/software/mindscribeai](https://devp
         },
         {
             "date": "2024",
+            "title": "Regent", 
+            "description": """Apple shortcuts that help to extend Monarch Launcher's functionality.
+* A regent is a person who rules a country for a limited period, because the king or queen (Basically a monarch) is absent or too young, too ill, etc. (Made these when Monarch Launcher Version < 0.6 basically beta)
+* Yeah so I started my customize MacOS arc.
+* Started using Monarch after going through using Spotlight and Raycast.
+* Saw the cool functionality that Superlinks and Apple shortcuts can add to my workflow.
+* Open sourced all the small scripts (Apple Shortcuts) I use with Monarch.
+* Learned a lot about Applescript and Shell scripting.
+
+Project available here: [https://github.com/UnknownCrafts/Regent](https://github.com/UnknownCrafts/Regent)
+"""
+        },
+        {
+            "date": "2024",
+            "title": "DockDoor", 
+            "description": """Contributed to an open source project called DockDoor.
+* Added a small feature to the swift app.
+* Made it so that when the DockDoor minimized app preview is clicked, it opens and focuses on the minimized app.
+* It was fun giving back to the devs especially since I use their app everyday.
+
+PR can be found here: [https://github.com/ejbills/DockDoor/pull/118](https://github.com/ejbills/DockDoor/pull/118)
+"""
+        },
+        {
+            "date": "2024",
             "title": "Python Projects", 
             "description": """Gotta have that Pythonic journey to start!
 
@@ -108,7 +133,24 @@ Project available here: [https://devpost.com/software/mindscribeai](https://devp
 * Developed a GUI quiz app that uses APIs to fetch random True/False questions from Open Trivia DB. (See day 34 of my 100 Days of Code GitHub repo.)
 * Developed a GUI flashcard app for learning French, parsing French and English from a JSON file.
 * Developed and worked with REST APIs.
-* Developed my personal website using Reflex."""
+* Developed my personal website using Reflex.
+* And many other apps, websites, games, and scripts!
+
+Projects available here: [https://github.com/UnknownCrafts/100-days-of-code-python-](https://github.com/UnknownCrafts/100-days-of-code-python-)
+"""
+        },
+        {
+            "date": "2024",
+            "title": "NoPDFPass", 
+            "description": """A simple app to remove the password restriction from PDFs.
+* This is not a PDF password cracking app.
+* This an app that is supposed to output PDF files that don't have a password on them. (you are still supposed to give it the passwords)
+* This was the first time I learned to compile a python script into a desktop application.
+* The app is a simple tkinter based GUI and uses a PDF parsing library to do its operations.
+* Learned how to compile for M series Macs so that the app can be installed without paying for the developer license.
+
+Project available here: [https://github.com/UnknownCrafts/NoPDFPass](https://github.com/UnknownCrafts/NoPDFPass)
+"""
         },
         {
             "date": "2023",
@@ -118,10 +160,14 @@ Project available here: [https://devpost.com/software/mindscribeai](https://devp
     * Upon detecting an object, a window prompts the user to search for it.
     * Clicking a button sends the user to Google Shopping with the object type as the search query.
 
+Project available here: [https://github.com/UnknownCrafts/Raspberry-Pi-Object-Detection-With-Search-Functionality](https://github.com/UnknownCrafts/Raspberry-Pi-Object-Detection-With-Search-Functionality)
+
 **Side Note:**
 
 * The naive highschooler attempted lip reading with AI on a Raspberry Pi.
-* Discovered that lip reading with AI requires CUDA cores, which the Raspberry Pi lacks."""
+* Discovered that lip reading with AI requires CUDA cores, which the Raspberry Pi lacks.
+    
+"""
         },
         {
             "date": "2023",
@@ -134,20 +180,34 @@ Project available here: [https://devpost.com/software/mindscribeai](https://devp
 * Enabled the OS to boot onto bare metal."""
         },
         {
-            "date": "2023",
+            "date": "2022",
+            "title": "Porting Minecraft Mods", 
+            "description": """Small minecraft programming arc, I mean that was the whole reason I got allowance to buy Minecraft Java edition anyways. (I totally wouldn't have it for any other reason)
+* I wanted to make a Minecraft modpack, quickly found out that it is really hard to make modpacks.
+* Ported 1.18 versions Musica, Visuality, and Effective mods to 1.17.1 because thats the version I was aiming to make the modpack for.
+* Quickly realized how confusing the modding documentation is for minecraft, I was making a fabric modpack.
+* The modpack wasn't optimized for size at all, I was able to find modpacks with way more mods that were like half the size. So there was some optimization issue for sure.
+* Also opened pull requests for the backport for Musica and Visuality, so that I could give back to the community. (The Visuality PR got approved! I think this was my first public PR getting approved)
+* This was also the first time I touched java.
+"""
+        },
+        {
+            "date": "2022",
             "title": "Smart Dustbin Project", 
             "description": """A naive highschooler learned a painful truth: even after *intensive* testing, live demos are destined to fail.
 
 This was my second large-scale Arduino hardware project, a team effort.
 
-* Having experienced the traffic light project's live demo failure, I rigorously tested the dustbin 50 times at home, fixing every issue that arose.
+* Worked on the wiring of the circuit. (Ultrasonic sensor with arduino)
+* Having experienced the traffic light project's live demo failure, I rigorously tested the dustbin more than 50 times at home, fixing every issue that arose.
 * The dustbin performed flawlessly during home tests, impressing even my teammates during a video call showcasing the final result.
 * However, during the official live demo, the dustbin malfunctioned.
 * I was responsible for all the coding, primarily detecting hand proximity via a sensor and controlling the lid's opening and closing.
 * Yes, I again mistakenly boasted about "multithreading" despite it not being implemented correctly.
-* Unfortunately, the project's video was also lost:
-    * Blame the school board for account termination.
-    * Blame Google Takeout for incomplete data retrieval."""
+* I found the video for this project!!!
+
+Project video here: [https://youtu.be/_KtPxIFETkk?si=-kiICwF3TsCzIW0w](https://youtu.be/_KtPxIFETkk?si=-kiICwF3TsCzIW0w) (Skip to 3:48 if you wanna see the dustbin in action)
+"""
         },
         {
             "date": "2022",
@@ -156,6 +216,7 @@ This was my second large-scale Arduino hardware project, a team effort.
 
 This was my first large-scale hardware project using Arduino, a team-based effort.
 
+* Worked on the wiring of the circuit. (Multiple LEDs with arduino)
 * I handled all the coding, primarily synchronizing LEDs, and most of the project's wiring.
 * I mistakenly believed multithreading was achieved by randomly pasting function calls within a `while` loop, and proudly claimed to have created a "multithreaded" application, despite Arduino's single-threaded nature.
 * Unfortunately, the project's video was lost:
@@ -163,8 +224,53 @@ This was my first large-scale hardware project using Arduino, a team-based effor
     * Blame Google Takeout for incomplete data retrieval."""
         },
         {
+            "date": "2022",
+            "title": "Vaccinator (STEM Hacks)", 
+            "description": """* Awarded 2nd place in a Covid-19 themed hackathon for the development of a 2D survival game using Unity. This project emphasized rapid prototyping, teamwork, and effective collaboration. Key contributions and achievements included:
+
+* Developed core gameplay mechanics and implemented them using Unity's C# scripting.
+* Designed and integrated 2D assets to create an engaging and thematic game environment.
+* Effectively collaborated with team members to manage tasks and achieve project milestones within the tight hackathon deadline.
+* Delivered a functional and engaging game that resonated with the judges, resulting in a 2nd place award.
+
+This experience significantly enhanced my ability to work under pressure, apply Unity development skills, and contribute to a successful team project.
+
+Project available here: [https://unknowncrafts.itch.io/vaccinator](https://unknowncrafts.itch.io/vaccinator)
+
+Source code available here: [https://github.com/UnknownCrafts/Stem_HackathonVaccinator](https://github.com/UnknownCrafts/Stem_HackathonVaccinator)
+"""
+        },
+        {
+            "date": "2022",
+            "title": "BetterMacMod", 
+            "description": """This was a personal project where I wanted to make a rainmeter like app for MacOS using Python.
+* Learned about creating objects during runtime.
+* Learned about why having code seperated in different files is important. (It was a pain to debug the code because everything was in one python file)
+* Learned a bit about the lambda function.
+* Later realized (after like 3 years) that making the app single threaded was one of the reasons my widgets didnt get updated all at once lol.
+* Learned about bash commands and shell scripting through python.
+
+Project video here: [https://www.youtube.com/watch?v=lgmoddUyE5Q](https://www.youtube.com/watch?v=lgmoddUyE5Q)
+"""
+        },
+        {
             "date": "2021",
-            "title": "Game Development Projects", 
+            "title": "Project Equinox (WolfHacks21)", 
+            "description": """Introducing to the residents of earth the first ever self sustaining habitable building that will make colonization on Plant Howler possible.
+
+* Worked on designing the website for the hackathon.
+* Learned a lot about frontend designing, UI/UX, and embedding things into a webpage.
+
+Link for the website: [https://aryapatel987.github.io/Equinox/](https://aryapatel987.github.io/Equinox/)
+
+Project available here: [https://devpost.com/software/welcome-to-project-equinox](https://devpost.com/software/welcome-to-project-equinox)
+
+Github Link: [https://github.com/AryaPatel987/project-](https://github.com/AryaPatel987/project-)
+"""
+        },
+        {
+            "date": "2021",
+            "title": "Carelton Design Studio Projects", 
             "description": """A naive highschooler wants to become a gamedeveloper because gaming is fun!
 
 * Worked in a team for two video games:
@@ -186,6 +292,40 @@ This was my first large-scale hardware project using Arduino, a team-based effor
 * Developed an infinitely generating platformer game where the main character is an alligator that survives disasters.
 
 Both projects available here: [https://carleton.ca/vv/clubprojects/](https://carleton.ca/vv/clubprojects/)
+"""
+        },
+        {
+            "date": "2020",
+            "title": "Lonely Survivor (Weekly Game Jam - Week 149)", 
+            "description": """My first ever gamejam!
+* This was around when I started developing games on unity again (after 2017).
+* The game is so unoptimized that it might as well be used as a cpu stress test.
+* This hackathon pushed me to learn more about game development and Unity so that I could make better games.
+
+Both projects available here: [https://unknowncrafts.itch.io/lonely-survivor](https://unknowncrafts.itch.io/lonely-survivor)
+"""
+        },
+        {
+            "date": "2017",
+            "title": "The uh bricking incident", 
+            "description": """I bricked my mom's HTC M8 by trying to update SU using busybox. (So I guess technically it wasn't my fault)
+* I had never done rooting before, but my cousin had rooted my phone before so that I could hack mobile games.
+* Learned a lot about the rooting process, bootloaders etc.
+* Learned a lot about android ROMs and flashing operating systems in general.
+* I tried to do file recovery and maybe I could have been able to do file recovery if I had more knowledge. (A 12 year old can only do so much)
+* Learning how to flash new operating systems onto older devices ignited a sustainability aspect in my mind.
+* Sorry mom.
+"""
+        },
+        {
+            "date": "2017",
+            "title": "Marble Rolling game", 
+            "description": """This was my first ever Unity project.
+* This was where I followed a youtube video on how to make a marble rolling game.
+* I was inspired by my cousin's astronaut game that he made in Unity.
+* The game is lost to a computer virus and also the fact that Unity dropped 32 bit OS support during that time.
+
+I think I followed this tutorial series: [https://www.youtube.com/watch?v=zlnJP0vloDg&list=PL-ptF2slHtJAYSWWJ8aqbf1a5tu9u7pAb](https://www.youtube.com/watch?v=zlnJP0vloDg&list=PL-ptF2slHtJAYSWWJ8aqbf1a5tu9u7pAb)
 """
         },
     ]

@@ -1,0 +1,1 @@
+import{b as e}from"./haskell-W8_AwmUy.js";export default e();

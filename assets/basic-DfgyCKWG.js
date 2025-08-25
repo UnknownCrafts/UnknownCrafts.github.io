@@ -1,0 +1,1 @@
+import{b as e}from"./basic-Bb_UtwAt.js";export default e();

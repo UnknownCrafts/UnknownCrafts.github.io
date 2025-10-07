@@ -1,0 +1,1 @@
+import{t as e}from"./haskell-BQ8sV4ci.js";export default e();

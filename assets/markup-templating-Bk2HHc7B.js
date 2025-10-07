@@ -1,0 +1,1 @@
+import{t as e}from"./markup-templating-2BUF6p0H.js";export default e();

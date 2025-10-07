@@ -13,7 +13,7 @@ EXPERIENCES = [
             """,
     },
     {
-        "date": "Feb 2025-Present",
+        "date": "Feb 2025-Sep 2025",
         "title": "ADAM (helloadam.ca)",
         "description": """
 * Developed user-facing features for a web platform using React and Vite, building responsive and accessible UI components with the shadcn/ui library.

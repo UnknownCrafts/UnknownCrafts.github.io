@@ -1,8 +1,30 @@
 PROJECTS = [
     {
-            "date": "2025",
-            "title": "uOCTF", 
-            "description": """Our team achieved **1st place** 🥇 in the uOCTF 2025 Capture the Flag (CTF) competition, organized by the uOttawa Cybersecurity Club. This intense 3-hour event presented 30 challenges spanning Web Exploitation, Forensics, Hardware Security, and Cryptography.
+        "date": "2025",
+        "title": "Code With Me",
+        "description": """A full-stack, real-time collaborative coding platform designed to solve a critical problem for new developers: the frustration of getting stuck alone. Our mission was to democratize mentorship and transform the learning experience from a solitary struggle into a shared journey.
+
+Secured **2nd Place** in the 'Code for Empowerment' challenge. The browser-based application instantly connects learners with peers and mentors for live, over-the-shoulder debugging and pair programming sessions, featuring a shared editor and integrated code execution—no downloads required.
+
+**Technical Highlights & Problem-Solving:**
+
+*   **Real-Time Collaborative Editor:** Developed a seamless, real-time collaborative code editor using **Yjs (CRDTs)** to ensure conflict-free, low-latency document synchronization between multiple users. This was the core challenge and a major technical achievement.
+*   **Robust Real-Time Backend:** Architected a backend with **Node.js and WebSockets** to maintain persistent, real-time connections essential for live collaboration and state management.
+*   **Secure Code Execution:** Integrated the **Piston API** to provide secure, sandboxed code execution, allowing users to instantly run and test code snippets from various languages directly within the platform.
+*   **First-Principles Algorithm Design:** Before settling on a final library, we designed a **synchronization algorithm from first principles** using a pub/sub model to deconflict concurrent edits. This exercise demonstrated a deep understanding of the core distributed systems challenges involved in real-time collaboration.
+*   **Modern Frontend:** Built a fast and responsive user interface with **Vite, React, and TypeScript**, ensuring a modern, type-safe, and intuitive experience for beginners.
+
+This project successfully mimics an in-person debugging session, creating an accessible and powerful tool that breaks down barriers to coding education.
+
+**Tech Stack:** React, TypeScript, Vite, Node.js, WebSockets, Yjs (CRDTs), Piston API
+
+**[View on GitHub](https://github.com/oZep/cwm)**
+""",
+    },
+    {
+        "date": "2025",
+        "title": "uOCTF",
+        "description": """Our team achieved **1st place** 🥇 in the uOCTF 2025 Capture the Flag (CTF) competition, organized by the uOttawa Cybersecurity Club. This intense 3-hour event presented 30 challenges spanning Web Exploitation, Forensics, Hardware Security, and Cryptography.
 
 We successfully solved 28 out of 30 challenges, demonstrating a strong grasp of diverse cybersecurity concepts and techniques. As a participant relatively new to CTFs, I found this experience incredibly rewarding, validating my self-taught knowledge from independent study.
 
@@ -18,12 +40,12 @@ We successfully solved 28 out of 30 challenges, demonstrating a strong grasp of 
     * Learned advanced techniques for hiding files within ZIP archives, bypassing standard extraction methods.
     * Gained practical experience in mounting and analyzing virtual flash drive file systems.
 * Team Collaboration: Leveraging teamwork and shared expertise to efficiently tackle challenges.
-"""
-        },
-        {
-            "date": "2025",
-            "title": "QNX FIGHTER (cuHacking 6)", 
-            "description": """* Ported a fighting game to multiple platforms:
+""",
+    },
+    {
+        "date": "2025",
+        "title": "QNX FIGHTER (cuHacking 6)",
+        "description": """* Ported a fighting game to multiple platforms:
     * Attempted porting Pygame to QNX.
     * Developed a Raylib version of the game.
     * Developed an NCurses version of the game.
@@ -32,12 +54,12 @@ Achievements:
 
 * First Place in QNX’s "Best use of QNX - Hardware" challenge at cuHacking 6 (600+ hackers participating).
 
-Project available here: [https://devpost.com/software/qnx-fighter](https://devpost.com/software/qnx-fighter)"""
-        },
-        {
-            "date": "2025",
-            "title": "Sweatris (uOttaHack 7)",
-            "description": """Sweatris: A Fitness-Themed Interactive Tetris Game
+Project available here: [https://devpost.com/software/qnx-fighter](https://devpost.com/software/qnx-fighter)""",
+    },
+    {
+        "date": "2025",
+        "title": "Sweatris (uOttaHack 7)",
+        "description": """Sweatris: A Fitness-Themed Interactive Tetris Game
 
 * A web-based application combining physical activity and gaming.
 * Provides a fun and engaging workout experience.
@@ -51,12 +73,12 @@ Achievements:
 
 Project available here: [https://github.com/bravesirrobin358/Sweatris](https://github.com/bravesirrobin358/Sweatris)
 
-Side Note: The naive highschooler would have been proud to know that the live demo did not fail."""
-        },
-        {
-            "date": "2024-Present",
-            "title": "Data Science Sounds Fun", 
-            "description": """Alright, winter break! Time to turn boredom into learning. Here's what I did:
+Side Note: The naive highschooler would have been proud to know that the live demo did not fail.""",
+    },
+    {
+        "date": "2024-Present",
+        "title": "Data Science Sounds Fun",
+        "description": """Alright, winter break! Time to turn boredom into learning. Here's what I did:
 
 * **Data Wrangling:**
     * Cleaned and encoded categorical data using Scikit-Learn, Pandas, and NumPy.
@@ -81,12 +103,12 @@ Side Note: The naive highschooler would have been proud to know that the live de
 * **Data Visualization:**
     * Plotted test and training data against predicted/actual values using Plotly and Matplotlib.
 * **R Implementation:**
-    * Replicated the above data analysis using R and its respective libraries."""
-        },
-        {
-            "date": "2024",
-            "title": "A Basic Computer", 
-            "description": """* Used an FPGA for this project.
+    * Replicated the above data analysis using R and its respective libraries.""",
+    },
+    {
+        "date": "2024",
+        "title": "A Basic Computer",
+        "description": """* Used an FPGA for this project.
 * Developed the ALU (Arithmetic Logic Unit) of a basic computer:
     * Implemented simple arithmetic operations: addition, subtraction, multiplication by 2.
     * Implemented logical operations: AND.
@@ -96,20 +118,20 @@ Side Note: The naive highschooler would have been proud to know that the live de
         * The controller checks the current instruction cycle.
         * The controller checks the first few bits of the instruction register.
     * Controller outputs are sent to a control register.
-    * Control register ensures synchronous output using positive edge-triggered D-FF (flip-flops) connected to a common clock."""
-        },
-        {
-            "date": "2024",
-            "title": "Rentify", 
-            "description": """* The goal of the app is to connect people who want to rent out their belongings with people who are looking to rent. The app supports item listing, searching, and renting, creating an easy-to-use service for both parties.
+    * Control register ensures synchronous output using positive edge-triggered D-FF (flip-flops) connected to a common clock.""",
+    },
+    {
+        "date": "2024",
+        "title": "Rentify",
+        "description": """* The goal of the app is to connect people who want to rent out their belongings with people who are looking to rent. The app supports item listing, searching, and renting, creating an easy-to-use service for both parties.
 * The app uses SQL as the backend to facilitate the interactions between the renters and lessor accounts.
 * I had a flexible role during this project where I mainly worked on the front end of the app where I made sure to make a UI/UX experience that would be easy to understand and follow. I also worked on backend fixes as needed for the app, for example debugging/fixing SQL queries as needed.
-* Also did QA (Quality assurance) testing of the app to ensure high quality of the code."""
-        },
-        {
-            "date": "2024",
-            "title": "MindScribeAI (Hack the Hill II)", 
-            "description": """* Developed an AI-powered journaling app using Flask (backend) and React (frontend).
+* Also did QA (Quality assurance) testing of the app to ensure high quality of the code.""",
+    },
+    {
+        "date": "2024",
+        "title": "MindScribeAI (Hack the Hill II)",
+        "description": """* Developed an AI-powered journaling app using Flask (backend) and React (frontend).
 * Implemented a feature to generate monthly reports from user journals, utilizing Gemini 1.5 Flash for rapid text generation.
 * Integrated Gemini as a chatbot, prompt-engineered to simulate a therapist.
 * Primarily focused on backend development:
@@ -117,12 +139,12 @@ Side Note: The naive highschooler would have been proud to know that the live de
     * Implemented user authentication.
 
 Project available here: [https://devpost.com/software/mindscribeai](https://devpost.com/software/mindscribeai)
-"""
-        },
-        {
-            "date": "2024",
-            "title": "Regent", 
-            "description": """Apple shortcuts that help to extend Monarch Launcher's functionality.
+""",
+    },
+    {
+        "date": "2024",
+        "title": "Regent",
+        "description": """Apple shortcuts that help to extend Monarch Launcher's functionality.
 * A regent is a person who rules a country for a limited period, because the king or queen (Basically a monarch) is absent or too young, too ill, etc. (Made these when Monarch Launcher Version < 0.6 basically beta)
 * Yeah so I started my customize MacOS arc.
 * Started using Monarch after going through using Spotlight and Raycast.
@@ -131,23 +153,23 @@ Project available here: [https://devpost.com/software/mindscribeai](https://devp
 * Learned a lot about Applescript and Shell scripting.
 
 Project available here: [https://github.com/UnknownCrafts/Regent](https://github.com/UnknownCrafts/Regent)
-"""
-        },
-        {
-            "date": "2024",
-            "title": "DockDoor", 
-            "description": """Contributed to an open source project called DockDoor.
+""",
+    },
+    {
+        "date": "2024",
+        "title": "DockDoor",
+        "description": """Contributed to an open source project called DockDoor.
 * Added a small feature to the swift app.
 * Made it so that when the DockDoor minimized app preview is clicked, it opens and focuses on the minimized app.
 * It was fun giving back to the devs especially since I use their app everyday.
 
 PR can be found here: [https://github.com/ejbills/DockDoor/pull/118](https://github.com/ejbills/DockDoor/pull/118)
-"""
-        },
-        {
-            "date": "2024",
-            "title": "Python Projects", 
-            "description": """Gotta have that Pythonic journey to start!
+""",
+    },
+    {
+        "date": "2024",
+        "title": "Python Projects",
+        "description": """Gotta have that Pythonic journey to start!
 
 * Learned how to perform web scraping while adhering to `robots.txt`.
 * Developed a GUI pomodoro timer. (See day 28 of my 100 Days of Code GitHub repo.)
@@ -158,12 +180,12 @@ PR can be found here: [https://github.com/ejbills/DockDoor/pull/118](https://git
 * And many other apps, websites, games, and scripts!
 
 Projects available here: [https://github.com/UnknownCrafts/100-days-of-code-python-](https://github.com/UnknownCrafts/100-days-of-code-python-)
-"""
-        },
-        {
-            "date": "2024",
-            "title": "NoPDFPass", 
-            "description": """A simple app to remove the password restriction from PDFs.
+""",
+    },
+    {
+        "date": "2024",
+        "title": "NoPDFPass",
+        "description": """A simple app to remove the password restriction from PDFs.
 * This is not a PDF password cracking app.
 * This an app that is supposed to output PDF files that don't have a password on them. (you are still supposed to give it the passwords)
 * This was the first time I learned to compile a python script into a desktop application.
@@ -171,12 +193,12 @@ Projects available here: [https://github.com/UnknownCrafts/100-days-of-code-pyth
 * Learned how to compile for M series Macs so that the app can be installed without paying for the developer license.
 
 Project available here: [https://github.com/UnknownCrafts/NoPDFPass](https://github.com/UnknownCrafts/NoPDFPass)
-"""
-        },
-        {
-            "date": "2023",
-            "title": "Object Detection With Raspberry PI ", 
-            "description": """* Used publicly available TensorFlow models to perform object detection.
+""",
+    },
+    {
+        "date": "2023",
+        "title": "Object Detection With Raspberry PI ",
+        "description": """* Used publicly available TensorFlow models to perform object detection.
 * The project added a tkinter GUI:
     * Upon detecting an object, a window prompts the user to search for it.
     * Clicking a button sends the user to Google Shopping with the object type as the search query.
@@ -188,34 +210,34 @@ Project available here: [https://github.com/UnknownCrafts/Raspberry-Pi-Object-De
 * The naive highschooler attempted lip reading with AI on a Raspberry Pi.
 * Discovered that lip reading with AI requires CUDA cores, which the Raspberry Pi lacks.
     
-"""
-        },
-        {
-            "date": "2023",
-            "title": "RustyOS", 
-            "description": """A naive high schooler wants to make his own operating system. How bad can it be?
+""",
+    },
+    {
+        "date": "2023",
+        "title": "RustyOS",
+        "description": """A naive high schooler wants to make his own operating system. How bad can it be?
 
 * Developed a minimal operating system as a side project.
 * Enabled RustyOS to print text onto a screen.
 * Implemented memory management, a simple clock-based scheduler, and a few exception handlers.
-* Enabled the OS to boot onto bare metal."""
-        },
-        {
-            "date": "2022",
-            "title": "Porting Minecraft Mods", 
-            "description": """Small minecraft programming arc, I mean that was the whole reason I got allowance to buy Minecraft Java edition anyways. (I totally wouldn't have it for any other reason)
+* Enabled the OS to boot onto bare metal.""",
+    },
+    {
+        "date": "2022",
+        "title": "Porting Minecraft Mods",
+        "description": """Small minecraft programming arc, I mean that was the whole reason I got allowance to buy Minecraft Java edition anyways. (I totally wouldn't have it for any other reason)
 * I wanted to make a Minecraft modpack, quickly found out that it is really hard to make modpacks.
 * Ported 1.18 versions Musica, Visuality, and Effective mods to 1.17.1 because thats the version I was aiming to make the modpack for.
 * Quickly realized how confusing the modding documentation is for minecraft, I was making a fabric modpack.
 * The modpack wasn't optimized for size at all, I was able to find modpacks with way more mods that were like half the size. So there was some optimization issue for sure.
 * Also opened pull requests for the backport for Musica and Visuality, so that I could give back to the community. (The Visuality PR got approved! I think this was my first public PR getting approved)
 * This was also the first time I touched java.
-"""
-        },
-        {
-            "date": "2022",
-            "title": "Smart Dustbin Project", 
-            "description": """A naive highschooler learned a painful truth: even after *intensive* testing, live demos are destined to fail.
+""",
+    },
+    {
+        "date": "2022",
+        "title": "Smart Dustbin Project",
+        "description": """A naive highschooler learned a painful truth: even after *intensive* testing, live demos are destined to fail.
 
 This was my second large-scale Arduino hardware project, a team effort.
 
@@ -228,12 +250,12 @@ This was my second large-scale Arduino hardware project, a team effort.
 * I found the video for this project!!!
 
 Project video here: [https://youtu.be/_KtPxIFETkk?si=-kiICwF3TsCzIW0w](https://youtu.be/_KtPxIFETkk?si=-kiICwF3TsCzIW0w) (Skip to 3:48 if you wanna see the dustbin in action)
-"""
-        },
-        {
-            "date": "2022",
-            "title": "Traffic Lights Project", 
-            "description": """A naive highschooler learned a valuable lesson: projects *always* fail during live demos.
+""",
+    },
+    {
+        "date": "2022",
+        "title": "Traffic Lights Project",
+        "description": """A naive highschooler learned a valuable lesson: projects *always* fail during live demos.
 
 This was my first large-scale hardware project using Arduino, a team-based effort.
 
@@ -242,12 +264,12 @@ This was my first large-scale hardware project using Arduino, a team-based effor
 * I mistakenly believed multithreading was achieved by randomly pasting function calls within a `while` loop, and proudly claimed to have created a "multithreaded" application, despite Arduino's single-threaded nature.
 * Unfortunately, the project's video was lost:
     * Blame the school board for account termination.
-    * Blame Google Takeout for incomplete data retrieval."""
-        },
-        {
-            "date": "2022",
-            "title": "Vaccinator (STEM Hacks)", 
-            "description": """* Awarded 2nd place in a Covid-19 themed hackathon for the development of a 2D survival game using Unity. This project emphasized rapid prototyping, teamwork, and effective collaboration. Key contributions and achievements included:
+    * Blame Google Takeout for incomplete data retrieval.""",
+    },
+    {
+        "date": "2022",
+        "title": "Vaccinator (STEM Hacks)",
+        "description": """* Awarded 2nd place in a Covid-19 themed hackathon for the development of a 2D survival game using Unity. This project emphasized rapid prototyping, teamwork, and effective collaboration. Key contributions and achievements included:
 
 * Developed core gameplay mechanics and implemented them using Unity's C# scripting.
 * Designed and integrated 2D assets to create an engaging and thematic game environment.
@@ -259,12 +281,12 @@ This experience significantly enhanced my ability to work under pressure, apply 
 Project available here: [https://unknowncrafts.itch.io/vaccinator](https://unknowncrafts.itch.io/vaccinator)
 
 Source code available here: [https://github.com/UnknownCrafts/Stem_HackathonVaccinator](https://github.com/UnknownCrafts/Stem_HackathonVaccinator)
-"""
-        },
-        {
-            "date": "2022",
-            "title": "BetterMacMod", 
-            "description": """This was a personal project where I wanted to make a rainmeter like app for MacOS using Python.
+""",
+    },
+    {
+        "date": "2022",
+        "title": "BetterMacMod",
+        "description": """This was a personal project where I wanted to make a rainmeter like app for MacOS using Python.
 * Learned about creating objects during runtime.
 * Learned about why having code seperated in different files is important. (It was a pain to debug the code because everything was in one python file)
 * Learned a bit about the lambda function.
@@ -272,12 +294,12 @@ Source code available here: [https://github.com/UnknownCrafts/Stem_HackathonVacc
 * Learned about bash commands and shell scripting through python.
 
 Project video here: [https://www.youtube.com/watch?v=lgmoddUyE5Q](https://www.youtube.com/watch?v=lgmoddUyE5Q)
-"""
-        },
-        {
-            "date": "2021",
-            "title": "Project Equinox (WolfHacks21)", 
-            "description": """Introducing to the residents of earth the first ever self sustaining habitable building that will make colonization on Plant Howler possible.
+""",
+    },
+    {
+        "date": "2021",
+        "title": "Project Equinox (WolfHacks21)",
+        "description": """Introducing to the residents of earth the first ever self sustaining habitable building that will make colonization on Plant Howler possible.
 
 * Worked on designing the website for the hackathon.
 * Learned a lot about frontend designing, UI/UX, and embedding things into a webpage.
@@ -287,12 +309,12 @@ Link for the website: [https://aryapatel987.github.io/Equinox/](https://aryapate
 Project available here: [https://devpost.com/software/welcome-to-project-equinox](https://devpost.com/software/welcome-to-project-equinox)
 
 Github Link: [https://github.com/AryaPatel987/project-](https://github.com/AryaPatel987/project-)
-"""
-        },
-        {
-            "date": "2021",
-            "title": "Carelton Design Studio Projects", 
-            "description": """A naive highschooler wants to become a gamedeveloper because gaming is fun!
+""",
+    },
+    {
+        "date": "2021",
+        "title": "Carelton Design Studio Projects",
+        "description": """A naive highschooler wants to become a gamedeveloper because gaming is fun!
 
 * Worked in a team for two video games:
     * Dogscape (first project)
@@ -313,40 +335,40 @@ Github Link: [https://github.com/AryaPatel987/project-](https://github.com/AryaP
 * Developed an infinitely generating platformer game where the main character is an alligator that survives disasters.
 
 Both projects available here: [https://carleton.ca/vv/clubprojects/](https://carleton.ca/vv/clubprojects/)
-"""
-        },
-        {
-            "date": "2020",
-            "title": "Lonely Survivor (Weekly Game Jam - Week 149)", 
-            "description": """My first ever gamejam!
+""",
+    },
+    {
+        "date": "2020",
+        "title": "Lonely Survivor (Weekly Game Jam - Week 149)",
+        "description": """My first ever gamejam!
 * This was around when I started developing games on unity again (after 2017).
 * The game is so unoptimized that it might as well be used as a cpu stress test.
 * This hackathon pushed me to learn more about game development and Unity so that I could make better games.
 
 Both projects available here: [https://unknowncrafts.itch.io/lonely-survivor](https://unknowncrafts.itch.io/lonely-survivor)
-"""
-        },
-        {
-            "date": "2017",
-            "title": "The uh bricking incident", 
-            "description": """I bricked my mom's HTC M8 by trying to update SU using busybox. (So I guess technically it wasn't my fault)
+""",
+    },
+    {
+        "date": "2017",
+        "title": "The uh bricking incident",
+        "description": """I bricked my mom's HTC M8 by trying to update SU using busybox. (So I guess technically it wasn't my fault)
 * I had never done rooting before, but my cousin had rooted my phone before so that I could hack mobile games.
 * Learned a lot about the rooting process, bootloaders etc.
 * Learned a lot about android ROMs and flashing operating systems in general.
 * I tried to do file recovery and maybe I could have been able to do file recovery if I had more knowledge. (A 12 year old can only do so much)
 * Learning how to flash new operating systems onto older devices ignited a sustainability aspect in my mind.
 * Sorry mom.
-"""
-        },
-        {
-            "date": "2017",
-            "title": "Marble Rolling game", 
-            "description": """This was my first ever Unity project.
+""",
+    },
+    {
+        "date": "2017",
+        "title": "Marble Rolling game",
+        "description": """This was my first ever Unity project.
 * This was where I followed a youtube video on how to make a marble rolling game.
 * I was inspired by my cousin's astronaut game that he made in Unity.
 * The game is lost to a computer virus and also the fact that Unity dropped 32 bit OS support during that time.
 
 I think I followed this tutorial series: [https://www.youtube.com/watch?v=zlnJP0vloDg&list=PL-ptF2slHtJAYSWWJ8aqbf1a5tu9u7pAb](https://www.youtube.com/watch?v=zlnJP0vloDg&list=PL-ptF2slHtJAYSWWJ8aqbf1a5tu9u7pAb)
-"""
-        },
-    ]
+""",
+    },
+]

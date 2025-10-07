@@ -1,0 +1,1 @@
+import"./markup-templating-2BUF6p0H.js";import{t as e}from"./php-C4rvdhFZ.js";export default e();

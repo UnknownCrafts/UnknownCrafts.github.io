@@ -1,1 +1,0 @@
-import{b as e}from"./bash-CAtk5lUJ.js";export default e();

@@ -1,5 +1,21 @@
 PROJECTS = [
     {
+        "date": "Oct 2025",
+        "title": "Quotify - Quantum Music Generator (🥉 3rd Place, IBM Qiskit Fall Fest 2025)",
+        "description": """
+* Developed Quotify, a quantum computing music generation system that won 3rd place at IBM Qiskit Fall Fest 2025 at the University of Ottawa.
+* Designed and implemented a QuantumMusicGenerator class using Python and the Qiskit library to translate quantum algorithm outputs into musical compositions.
+* Integrated multiple quantum algorithms as unique "instruments" in a digital orchestra:
+    * Quantum Fourier Transform for harmonic progressions
+    * Grover's Algorithm to amplify and accent specific notes
+    * Quantum Walks to generate evolving melodic lines
+    * Entangled Bell States to produce correlated duets
+* Built a real-time audio-visual performance system using Pygame, streaming quantum data for synchronized music and visual effects.
+* Developed custom firmware to control an LED light show synchronized with the quantum-generated music.
+* Demonstrated practical applications of quantum computing beyond traditional computational problems, exploring the intersection of quantum mechanics and creative expression.
+        """,
+    },
+    {
         "date": "2025",
         "title": "Code With Me",
         "description": """A full-stack, real-time collaborative coding platform designed to solve a critical problem for new developers: the frustration of getting stuck alone. Our mission was to democratize mentorship and transform the learning experience from a solitary struggle into a shared journey.

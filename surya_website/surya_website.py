@@ -67,7 +67,7 @@ def index() -> rx.Component:
             # Footer
             rx.flex(
                 rx.text(
-                    "© 2025 Surya Vasudev • Built with Reflex",
+                    "© 2026 Surya Vasudev",
                     size="1",
                     color="var(--gray-9)",
                 ),
@@ -154,4 +154,5 @@ app = rx.App(
         accent_color="indigo",
         gray_color="slate",
     ),
+    enable_state=False,
 )

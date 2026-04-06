@@ -1,7 +1,5 @@
 import reflex as rx
-from assets.blogs import BLOGS
-from assets.projects import PROJECTS
-from assets.experiences import EXPERIENCES
+from assets.content import PROJECTS, EXPERIENCES, BLOGS
 from assets.utils import page_layout, nav_card, project_card, experience_item, blog_card
 
 
@@ -145,6 +143,26 @@ def blogs() -> rx.Component:
     )
 
 
+def blog_post_page(blog: dict) -> rx.Component:
+    """Template for individual blog pages."""
+    return page_layout(
+        rx.vstack(
+            # Show the date at the top of the article
+            rx.badge(
+                blog.get("date", ""), color_scheme="indigo", variant="surface", size="2"
+            ),
+            rx.divider(margin_y="1em"),
+            # The actual markdown content
+            rx.markdown(blog["content"]),
+            spacing="4",
+            align_items="start",
+            width="100%",
+        ),
+        title=blog.get("title", ""),
+        show_back=True,
+    )
+
+
 app = rx.App(
     stylesheets=["/styles.css"],
     theme=rx.theme(
@@ -156,3 +174,12 @@ app = rx.App(
     ),
     enable_state=False,
 )
+
+# Loop through all blogs and generate a static page for each one
+for blog in BLOGS:
+    # Use lambda b=blog to capture the specific blog in this iteration
+    app.add_page(
+        lambda b=blog: blog_post_page(b),
+        route=f"/blog/{blog['slug']}",
+        title=f"{blog['title']} - Surya Vasudev",
+    )

@@ -60,8 +60,7 @@ def nav_card(icon: str, heading: str, text: str, href: str) -> rx.Component:
 
 
 def project_card(project: dict) -> rx.Component:
-    """Unified, clean project card with a dialog for details."""
-    is_featured = "🥇" in project["title"] or "🥉" in project["title"]
+    is_featured = project.get("featured", False)
 
     return rx.card(
         rx.vstack(
@@ -71,17 +70,15 @@ def project_card(project: dict) -> rx.Component:
                     if is_featured
                     else rx.fragment()
                 ),
-                rx.badge(project["date"], variant="soft", color_scheme="gray"),
+                rx.badge(project.get("date", ""), variant="soft", color_scheme="gray"),
                 spacing="2",
             ),
-            rx.heading(
-                project["title"].replace("🥇", "").replace("🥉", "").strip(), size="5"
-            ),
+            rx.heading(project.get("title", ""), size="5"),
             rx.text(
                 (
-                    project["description"][:120] + "..."
-                    if len(project["description"]) > 120
-                    else project["description"]
+                    project["content"][:120] + "..."
+                    if len(project["content"]) > 120
+                    else project["content"]
                 ),
                 size="2",
                 color="var(--gray-11)",
@@ -91,10 +88,9 @@ def project_card(project: dict) -> rx.Component:
                     rx.button("Read More", variant="soft", size="2", margin_top="1em")
                 ),
                 rx.dialog.content(
-                    rx.dialog.title(project["title"]),
-                    rx.scroll_area(
-                        rx.markdown(project["description"]), max_height="60vh"
-                    ),
+                    rx.dialog.title(project.get("title", "")),
+                    # Pass the markdown content to the parser
+                    rx.scroll_area(rx.markdown(project["content"]), max_height="60vh"),
                     rx.dialog.close(
                         rx.button("Close", variant="soft", margin_top="1em")
                     ),
@@ -118,7 +114,7 @@ def experience_item(exp: dict) -> rx.Component:
                 width="100%",
                 align="center",
             ),
-            rx.markdown(exp["description"], size="2", color="var(--gray-11)"),
+            rx.markdown(exp["content"], size="2", color="var(--gray-11)"),
             spacing="2",
             width="100%",
             padding_left="1em",
@@ -130,14 +126,21 @@ def experience_item(exp: dict) -> rx.Component:
 
 def blog_card(blog: dict) -> rx.Component:
     """Clean blog preview card."""
+    # Fallback to using the content if description isn't in frontmatter
+    preview_text = blog.get("description", blog["content"])
+
     return rx.card(
         rx.vstack(
-            rx.badge(blog["date"], variant="soft"),
-            rx.heading(blog["title"], size="5"),
-            rx.text(
-                blog["description"][:100] + "...", size="2", color="var(--gray-11)"
+            rx.badge(blog.get("date", ""), variant="soft"),
+            rx.heading(blog.get("title", ""), size="5"),
+            rx.text(preview_text[:100] + "...", size="2", color="var(--gray-11)"),
+            rx.link(
+                "Read post →",
+                href=f"/blog/{blog['slug']}",
+                size="2",
+                weight="bold",
+                color="var(--accent-11)",
             ),
-            rx.link("Read post →", href="#", size="2", weight="bold"),
             spacing="3",
         ),
         width="100%",

@@ -100,6 +100,7 @@ def project_card(project: dict) -> rx.Component:
             align_items="start",
         ),
         width="100%",
+        class_name="scroll-animate",
     )
 
 

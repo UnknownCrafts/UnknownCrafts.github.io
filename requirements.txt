@@ -1,1 +1,2 @@
 reflex==0.8.28
+python-frontmatter==1.1.0

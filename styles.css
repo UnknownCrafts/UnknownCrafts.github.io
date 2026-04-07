@@ -1,0 +1,54 @@
+body { margin: 0; padding: 0; background-color: var(--gray-1); }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--gray-6); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gray-8); }
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Default fallback: simple fade-in on load */
+.scroll-animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Modern browsers: scroll-triggered animation */
+@supports (animation-timeline: view()) {
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 50%;
+  }
+  
+  /* Stagger delays for grid items */
+  .scroll-animate:nth-child(odd) {
+    animation-range: entry 0% entry 40%;
+  }
+  
+  .scroll-animate:nth-child(even) {
+    animation-range: entry 10% entry 50%;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animate {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}

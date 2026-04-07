@@ -1,0 +1,1 @@
+import{t as e}from"./basic-CHOirDAe.js";export{e as default};

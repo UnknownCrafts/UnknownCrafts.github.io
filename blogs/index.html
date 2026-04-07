@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Blogs</title><meta content="favicon.ico" property="og:image"/><link rel="modulepreload" href="/assets/manifest-92f083f0.js"/><link rel="modulepreload" href="/assets/entry.client-Dl_6mtQA.js"/><link rel="modulepreload" href="/assets/react-dom-C2AZUacv.js"/><link rel="modulepreload" href="/assets/chunk-JZWAC4HX-BD7FVasI.js"/><link rel="modulepreload" href="/assets/rolldown-runtime-Pi8RIR1E.js"/><link rel="modulepreload" href="/assets/root-DyH4Nc7r.js"/><link rel="modulepreload" href="/assets/emotion-react.browser.esm-CmNOfEBP.js"/><link rel="modulepreload" href="/assets/esm-CyroQVg-.js"/><link rel="modulepreload" href="/assets/reflex-env-Czqphxa4.js"/><link rel="modulepreload" href="/assets/_blogs_._index-C0sPkzs-.js"/><link rel="modulepreload" href="/assets/stateful_components-DzlSeLIU.js"/><link rel="modulepreload" href="/assets/createLucideIcon-Uwb1MVxd.js"/><script>
+// Only run in browser environment, not during SSR
+if (typeof document !== 'undefined') {
+    try {
+        const theme = localStorage.getItem("theme") || "system";
+        const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const resolvedTheme = theme === "system" ? systemPreference : theme;
+
+        // Apply theme immediately - blocks until complete
+        // Use classList to avoid overwriting other classes
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(resolvedTheme);
+        document.documentElement.style.colorScheme = resolvedTheme;
+
+    } catch (e) {
+        // Fallback to system preference on any error (resolve "system" to actual theme)
+        const fallbackTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(fallbackTheme);
+        document.documentElement.style.colorScheme = fallbackTheme;
+    }
+}
+</script><link href="/assets/__reflex_global_styles-BiODVPUg.css" rel="stylesheet" type="text/css"/></head><body><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section><div data-is-root-theme="true" data-accent-color="indigo" data-gray-color="slate" data-has-background="true" data-panel-background="translucent" data-radius="medium" data-scaling="100%" class="radix-themes css-0"><style data-emotion="css 19fg025">.css-19fg025{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;width:100%;min-height:100vh;}</style><div class="rt-Flex css-19fg025"><style data-emotion="css uar6h4">.css-uar6h4{width:100%;max-width:800px;padding:2em;}</style><div class="rt-Flex rt-r-fd-column rt-r-ai-start rt-r-gap-6 rx-Stack css-uar6h4"><style data-emotion="css 1b420e2">.css-1b420e2{width:100%;margin-bottom:2em;}</style><div class="rt-Flex rt-r-ai-center css-1b420e2"><h1 class="rt-Heading rt-r-size-8 rt-r-weight-bold">My Blogs</h1><style data-emotion="css 17xejub">.css-17xejub{-webkit-flex:1;-ms-flex:1;flex:1;justify-self:stretch;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch;}</style><div class="rt-Flex css-17xejub"></div><button data-accent-color="" class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-soft rt-Button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>Home</button></div><style data-emotion="css 8atqhb">.css-8atqhb{width:100%;}</style><div class="rt-Grid rt-r-gtc-2 rt-r-gap-4 css-8atqhb"><div class="rt-reset rt-BaseCard rt-Card rt-r-size-1 rt-variant-surface css-8atqhb"><div class="rt-Flex rt-r-fd-column rt-r-ai-start rt-r-gap-3 rx-Stack"><span data-accent-color="" class="rt-reset rt-Badge rt-r-size-1 rt-variant-soft">September 1, 2025</span><h1 class="rt-Heading rt-r-size-5">Self hosting without a keyboard</h1><style data-emotion="css cqk0y8">.css-cqk0y8{color:var(--gray-11);}</style><p class="rt-Text rt-r-size-2 css-cqk0y8">Soons...</p><style data-emotion="css 1brrn5o">.css-1brrn5o{color:var(--accent-11);}.css-1brrn5o:hover{color:var(--accent-8);}</style><a data-accent-color="" class="rt-Text rt-reset rt-Link rt-r-size-2 rt-r-weight-bold rt-underline-auto css-1brrn5o" href="/blog/self-hosting" data-discover="true">Read post →</a></div></div></div></div></div></div><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><script>window.__reactRouterContext = {"basename":"/","future":{"unstable_optimizeDeps":true,"unstable_subResourceIntegrity":false,"unstable_trailingSlashAwareDataRequests":false,"v8_middleware":false,"v8_splitRouteModules":false,"v8_viteEnvironmentApi":false},"routeDiscovery":{"mode":"initial"},"ssr":false,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">import "/assets/manifest-92f083f0.js";
+import * as route0 from "/assets/root-DyH4Nc7r.js";
+import * as route1 from "/assets/_blogs_._index-C0sPkzs-.js";
+  
+  window.__reactRouterRouteModules = {"root":route0,"routes/[blogs]._index":route1};
+
+import("/assets/entry.client-Dl_6mtQA.js");</script><!--$?--><template id="B:0"></template><!--/$--><script id="_R_">requestAnimationFrame(function(){$RT=performance.now()});</script><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script></body></html>

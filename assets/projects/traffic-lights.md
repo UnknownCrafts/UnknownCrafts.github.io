@@ -1,8 +1,8 @@
 ---
 title: "Traffic Lights Project"
-date: "2022"
-featured: "false"
-order: 19
+start_date: "2022-01"
+end_date: "2022-02"
+featured: false
 ---
 A naive highschooler learned a valuable lesson: projects *always* fail during live demos.
 

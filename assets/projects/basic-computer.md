@@ -1,8 +1,8 @@
 ---
 title: "A Basic Computer"
-date: "2024"
-featured: "false"
-order: 8
+start_date: "2024-01"
+end_date: "2024-01"
+featured: false
 ---
 * Used an FPGA for this project.
 * Developed the ALU (Arithmetic Logic Unit) of a basic computer:

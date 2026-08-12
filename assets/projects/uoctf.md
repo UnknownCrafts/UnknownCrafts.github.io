@@ -1,8 +1,8 @@
 ---
 title: "uOCTF"
-date: "2025"
-featured: "true"
-order: 4
+start_date: "2025-01"
+end_date: "2025-02"
+featured: true
 ---
 Our team achieved **1st place** 🥇 in the uOCTF 2025 Capture the Flag (CTF) competition, organized by the uOttawa Cybersecurity Club. This intense 3-hour event presented 30 challenges spanning Web Exploitation, Forensics, Hardware Security, and Cryptography.
 

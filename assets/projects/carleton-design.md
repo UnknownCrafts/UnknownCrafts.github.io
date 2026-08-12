@@ -1,8 +1,8 @@
 ---
-title: "Carelton Design Studio Projects"
-date: "2021"
-featured: "false"
-order: 23
+title: "Carleton Design Studio Projects"
+start_date: "2021-01"
+end_date: "2021-01"
+featured: false
 ---
 A naive highschooler wants to become a gamedeveloper because gaming is fun!
 

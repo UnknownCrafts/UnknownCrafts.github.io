@@ -1,7 +1,8 @@
 ---
-title: "Co-Founding Software Engineer @ ADAM (helloadam.ca)"
-date: "Feb 2025-Sep 2025"
-order: 2
+title: "Co-Founding Software Engineer @ ADAM"
+url: "https://helloadam.ca/"
+start_date: "2025-02"
+end_date: "2025-09"
 ---
 * Developed user-facing features for a web platform using React and Vite, building responsive and accessible UI components with the shadcn/ui library.
 * Designed, built, and deployed a backend REST API endpoint to integrate the Gmail API, automating the user onboarding process and demonstrating proficiency in server-side programming and MVC patterns.

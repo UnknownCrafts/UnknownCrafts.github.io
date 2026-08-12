@@ -3,6 +3,41 @@ from pathlib import Path
 from datetime import datetime
 import frontmatter
 
+PRESENT_KEYWORDS = {"present", "current", "now", "ongoing"}
+REQUIRED_FIELDS = {"title"}
+
+
+def parse_month(date_str: str) -> datetime:
+    """Parse a single point in time: '2025-02', '2025', 'Feb 2025', etc."""
+    if not date_str or str(date_str).strip().lower() in PRESENT_KEYWORDS:
+        return datetime.max
+
+    date_str = str(date_str).strip()
+
+    for fmt in ["%Y-%m-%d", "%Y-%m", "%Y"]:
+        try:
+            return datetime.strptime(date_str, fmt)
+        except ValueError:
+            continue
+
+    for fmt in ["%b %Y", "%B %d, %Y"]:
+        try:
+            return datetime.strptime(date_str, fmt)
+        except ValueError:
+            continue
+
+    return datetime(1900, 1, 1)
+
+
+def format_date_range(start: str, end: str | None) -> str:
+    start_label = parse_month(start).strftime("%b %Y")
+
+    if not end or str(end).strip().lower() in PRESENT_KEYWORDS:
+        return f"{start_label} - Present"
+
+    end_label = parse_month(end).strftime("%b %Y")
+    return f"{start_label} - {end_label}"
+
 
 def load_markdown_dir(directory: str) -> list[dict]:
     """Load all markdown files from a directory and parse frontmatter."""
@@ -13,19 +48,29 @@ def load_markdown_dir(directory: str) -> list[dict]:
         return items
 
     for file_path in dir_path.glob("*.md"):
-        # frontmatter.load() parses both frontmatter and content automatically
         post = frontmatter.load(file_path)
-
-        # Convert to dict and add content
         meta = dict(post.metadata)
         meta["content"] = post.content
 
-        # Ensure featured is a boolean
+        missing = REQUIRED_FIELDS - meta.keys()
+        if missing:
+            raise ValueError(f"{file_path} is missing required frontmatter: {missing}")
+
         if "featured" in meta and isinstance(meta["featured"], str):
             meta["featured"] = meta["featured"].lower() == "true"
         meta.setdefault("featured", False)
 
-        # Extract slug from filename (remove leading numbers if present)
+        # --- Date handling ---
+        if "start_date" in meta:
+            end_raw = meta.get("end_date")
+            meta["date"] = format_date_range(meta["start_date"], end_raw)
+            meta["_start_dt"] = parse_month(meta["start_date"])
+            meta["_end_dt"] = parse_month(end_raw) if end_raw else datetime.now()
+        else:
+            dt = parse_month(meta.get("date", ""))
+            meta["_start_dt"] = dt
+            meta["_end_dt"] = dt
+
         base_name = file_path.stem
         meta["slug"] = re.sub(r"^\d+-", "", base_name)
 
@@ -34,59 +79,21 @@ def load_markdown_dir(directory: str) -> list[dict]:
     return items
 
 
-def parse_date(date_str: str) -> datetime:
-    """
-    Parse various date formats into a datetime for sorting.
-    Handles: "2025-03-15", "2025-03", "2025", "Oct 2025", etc.
-    """
-    if not date_str:
-        return datetime(1900, 1, 1)
-
-    date_str = str(date_str).strip()
-
-    # Try ISO format first: 2025-03-15 or 2025-03 or 2025
-    for fmt in ["%Y-%m-%d", "%Y-%m", "%Y"]:
-        try:
-            return datetime.strptime(date_str, fmt)
-        except ValueError:
-            continue
-
-    # Try "Month Year" format: "Oct 2025"
-    try:
-        return datetime.strptime(date_str, "%b %Y")
-    except ValueError:
-        pass
-
-    # Try "Month DD, YYYY": "October 15, 2025"
-    try:
-        return datetime.strptime(date_str, "%B %d, %Y")
-    except ValueError:
-        pass
-
-    # Fallback: if we can't parse, put it far in the past
-    return datetime(1900, 1, 1)
-
-
 def sort_items(items: list[dict]) -> list[dict]:
     """
-    Sort items by:
+    Sort priority:
     1. Featured items first
-    2. Manual order (lower = higher priority)
-    3. Date (newer = higher priority)
+    2. Manual order override (if set)
+    3. Newest end date (Ongoing/Present items stay on top)
+    4. Newest start date (Most recently started roles float to top)
     """
 
     def sort_key(item):
-        # For featured: False=0, True=1. We want True first, so negate
         featured_priority = 0 if item.get("featured", False) else 1
-
-        # For order: lower numbers = higher priority
         order_priority = item.get("order", 9999)
-
-        # For date: newer = higher priority, so negate the timestamp
-        date = parse_date(item.get("date", "1900-01-01"))
-        date_priority = -date.timestamp()  # Negate so newer dates sort first
-
-        return (featured_priority, order_priority, date_priority)
+        end_priority = -item["_end_dt"].timestamp()
+        start_priority = -item["_start_dt"].timestamp()
+        return (featured_priority, order_priority, end_priority, start_priority)
 
     return sorted(items, key=sort_key)
 

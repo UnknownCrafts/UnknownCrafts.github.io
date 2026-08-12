@@ -1,8 +1,8 @@
 ---
 title: "Vaccinator (STEM Hacks)"
-date: "2022"
-featured: "false"
-order: 20
+start_date: "2022-01"
+end_date: "2022-01"
+featured: false
 ---
 * Awarded 2nd place in a Covid-19 themed hackathon for the development of a 2D survival game using Unity. This project emphasized rapid prototyping, teamwork, and effective collaboration. Key contributions and achievements included:
 

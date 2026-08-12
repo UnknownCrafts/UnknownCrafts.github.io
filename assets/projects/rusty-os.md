@@ -1,8 +1,7 @@
 ---
 title: "RustyOS"
-date: "2023"
-featured: "false"
-order: 16
+start_date: "2023-01"
+featured: false
 ---
 A naive high schooler wants to make his own operating system. How bad can it be?
 

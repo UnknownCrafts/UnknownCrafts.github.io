@@ -1,7 +1,8 @@
 ---
 title: "Embedded Software Developer @ Stratopore"
-date: "Feb 2025-Aug 2025"
-order: 4
+url: "https://gitlab.com/stratopore-can-sbx"
+start_date: "2025-02"
+end_date: "2025-08"
 ---
 * Developed and optimized embedded drivers for a suite of critical sensors, including barometers, Inertial Measurement Units (IMUs), and Real-Time Clocks (RTCs), utilizing the STM32 microcontroller platform.
 * Overcame challenges related to I2C communication timing and data integrity, resulting in reliable sensor data capture.

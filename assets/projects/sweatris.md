@@ -1,8 +1,8 @@
 ---
 title: "Sweatris (uOttaHack 7)"
-date: "2025"
-featured: "true"
-order: 6
+start_date: "2025-01"
+end_date: "2025-01"
+featured: true
 ---
 Sweatris: A Fitness-Themed Interactive Tetris Game
 
@@ -13,7 +13,7 @@ Sweatris: A Fitness-Themed Interactive Tetris Game
 
 Achievements:
 
-* First Place in NAV CANADA’s challenge at uOttaHack 7 (800+ hackers participating).
+* First Place in NAV CANADA's challenge at uOttaHack 7 (800+ hackers participating).
 * Third Place in uOttaHack 7 General Category.
 
 Project available here: [https://github.com/bravesirrobin358/Sweatris](https://github.com/bravesirrobin358/Sweatris)

@@ -1,8 +1,8 @@
 ---
 title: "BetterMacMod"
-date: "2022"
-featured: "false"
-order: 21
+start_date: "2022-01"
+end_date: "2022-01"
+featured: false
 ---
 This was a personal project where I wanted to make a rainmeter like app for MacOS using Python.
 * Learned about creating objects during runtime.

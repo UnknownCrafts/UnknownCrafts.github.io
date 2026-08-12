@@ -1,8 +1,8 @@
 ---
 title: "Quotify - Quantum Music Generator (🥉 3rd Place, IBM Qiskit Fall Fest 2025)"
-date: "Oct 2025"
-featured: "true"
-order: 2
+start_date: "2025-10"
+end_date: "2025-10"
+featured: true
 ---
 * Developed Quotify, a quantum computing music generation system that won 3rd place at IBM Qiskit Fall Fest 2025 at the University of Ottawa.
 * Designed and implemented a QuantumMusicGenerator class using Python and the Qiskit library to translate quantum algorithm outputs into musical compositions.

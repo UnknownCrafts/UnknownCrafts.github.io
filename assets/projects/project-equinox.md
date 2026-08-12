@@ -1,8 +1,8 @@
 ---
 title: "Project Equinox (WolfHacks21)"
-date: "2021"
-featured: "false"
-order: 22
+start_date: "2021-01"
+end_date: "2021-01"
+featured: false
 ---
 Introducing to the residents of earth the first ever self sustaining habitable building that will make colonization on Plant Howler possible.
 

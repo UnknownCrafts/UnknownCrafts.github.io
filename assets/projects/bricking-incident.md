@@ -1,8 +1,8 @@
 ---
 title: "The uh bricking incident"
-date: "2017"
-featured: "false"
-order: 25
+start_date: "2017-01"
+end_date: "2017-01"
+featured: false
 ---
 I bricked my mom's HTC M8 by trying to update SU using busybox. (So I guess technically it wasn't my fault)
 * I had never done rooting before, but my cousin had rooted my phone before so that I could hack mobile games.

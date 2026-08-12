@@ -1,8 +1,8 @@
 ---
 title: "Real-Time Route Optimization System (🥇 1st Place, Programming Competition)"
-date: "2025"
-featured: "true"
-order: 1
+start_date: "2025-01"
+end_date: "2025-01"
+featured: true
 ---
 Developed a competition-winning route optimization system that solves the Vehicle Routing Problem with Time Windows (VRPTW) under strict performance constraints, achieving 1st place in a performance-based programming challenge.
 

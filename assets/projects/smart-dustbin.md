@@ -1,8 +1,8 @@
 ---
 title: "Smart Dustbin Project"
-date: "2022"
-featured: "false"
-order: 18
+start_date: "2022-01"
+end_date: "2022-02"
+featured: false
 ---
 A naive highschooler learned a painful truth: even after *intensive* testing, live demos are destined to fail.
 

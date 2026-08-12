@@ -1,8 +1,8 @@
 ---
-title: "Object Detection With Raspberry PI"
-date: "2023"
-featured: "false"
-order: 15
+title: "Object Detection With Raspberry Pi"
+start_date: "2023-01"
+end_date: "2023-01"
+featured: false
 ---
 * Used publicly available TensorFlow models to perform object detection.
 * The project added a tkinter GUI:

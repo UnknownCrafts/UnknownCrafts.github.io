@@ -1,8 +1,8 @@
 ---
 title: "Code With Me"
-date: "2025"
-featured: "true"
-order: 3
+start_date: "2025-01"
+end_date: "2025-01"
+featured: true
 ---
 A full-stack, real-time collaborative coding platform designed to solve a critical problem for new developers: the frustration of getting stuck alone. Our mission was to democratize mentorship and transform the learning experience from a solitary struggle into a shared journey.
 

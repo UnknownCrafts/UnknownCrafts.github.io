@@ -1,8 +1,8 @@
 ---
 title: "Regent"
-date: "2024"
-featured: "false"
-order: 11
+start_date: "2024-01"
+end_date: "2024-01"
+featured: false
 ---
 Apple shortcuts that help to extend Monarch Launcher's functionality.
 * A regent is a person who rules a country for a limited period, because the king or queen (Basically a monarch) is absent or too young, too ill, etc. (Made these when Monarch Launcher Version < 0.6 basically beta)

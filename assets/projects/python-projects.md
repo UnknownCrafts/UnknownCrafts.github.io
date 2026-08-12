@@ -1,8 +1,8 @@
 ---
 title: "Python Projects"
-date: "2024"
-featured: "false"
-order: 13
+start_date: "2024-01"
+end_date: "2024-01"
+featured: false
 ---
 Gotta have that Pythonic journey to start!
 

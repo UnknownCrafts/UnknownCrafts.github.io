@@ -1,8 +1,8 @@
 ---
 title: "Data Science Sounds Fun"
-date: "2024-Present"
-featured: "false"
-order: 7
+start_date: "2024-01"
+end_date: "2024-01"
+featured: false
 ---
 Alright, winter break! Time to turn boredom into learning. Here's what I did:
 

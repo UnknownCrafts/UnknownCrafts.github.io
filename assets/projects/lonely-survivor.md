@@ -1,8 +1,8 @@
 ---
 title: "Lonely Survivor (Weekly Game Jam - Week 149)"
-date: "2020"
-featured: "false"
-order: 24
+start_date: "2020-01"
+end_date: "2020-01"
+featured: false
 ---
 My first ever gamejam!
 * This was around when I started developing games on unity again (after 2017).

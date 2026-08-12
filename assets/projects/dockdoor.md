@@ -1,8 +1,8 @@
 ---
 title: "DockDoor"
-date: "2024"
-featured: "false"
-order: 12
+start_date: "2024-01"
+end_date: "2024-01"
+featured: false
 ---
 Contributed to an open source project called DockDoor.
 * Added a small feature to the swift app.

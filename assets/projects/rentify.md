@@ -1,8 +1,8 @@
 ---
 title: "Rentify"
-date: "2024"
-featured: "false"
-order: 9
+start_date: "2024-01"
+end_date: "2024-01"
+featured: false
 ---
 * The goal of the app is to connect people who want to rent out their belongings with people who are looking to rent. The app supports item listing, searching, and renting, creating an easy-to-use service for both parties.
 * The app uses SQL as the backend to facilitate the interactions between the renters and lessor accounts.
